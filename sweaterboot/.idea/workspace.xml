@@ -98,7 +98,7 @@
         <counts>
           <entry key="ftl" value="297" />
           <entry key="java" value="299" />
-          <entry key="properties" value="171" />
+          <entry key="properties" value="179" />
           <entry key="sh" value="262" />
           <entry key="xml" value="8" />
         </counts>
@@ -109,7 +109,7 @@
           <entry key="HTML" value="209" />
           <entry key="JAVA" value="299" />
           <entry key="PLAIN_TEXT" value="88" />
-          <entry key="Properties" value="171" />
+          <entry key="Properties" value="179" />
           <entry key="XML" value="8" />
         </counts>
       </usages-collector>
@@ -147,8 +147,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+            <state relative-caret-position="150">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -535,7 +535,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538245820349" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1538246012611" />
     <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/sweaterboot" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -896,8 +896,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        <state relative-caret-position="150">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
