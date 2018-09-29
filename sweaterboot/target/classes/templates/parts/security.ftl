@@ -9,12 +9,13 @@
     name = user.getUsername()
     isAdmin = user.isAdmin()
     isActive=true
-    isActiveMail=user.isActiveMail()
+    currentUserId = user.getId()
     >
 <#else>
     <#assign
     name = "unknown"
     isAdmin = false
     isActive=false
+    currentUserId=-1
     >
 </#if>
