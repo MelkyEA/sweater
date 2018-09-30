@@ -3,9 +3,9 @@
 <form action="${path}" method="post" >
 
     <div class="form-group">
-        <label class="col-sm-2 col-form-label"> User Name : </label>
+        <label class="col-sm-2 col-form-label"> Имя пользователя: </label>
         <div class="col-sm-4">
-            <input type="text" name="username" class="form-control ${(usernameError??)?string('is-invalid', '')}" placeholder="User name"
+            <input type="text" name="username" class="form-control ${(usernameError??)?string('is-invalid', '')}" placeholder="Имя пользователя"
                    value="<#if user??>${user.username}</#if>"/>
             <#if usernameError??>
                 <div class="invalid-feedback">
@@ -15,9 +15,9 @@
         </div>
     </div>
     <div class="form-group">
-        <label class="col-sm-2 col-form-label"> Password: </label>
+        <label class="col-sm-2 col-form-label"> Пароль: </label>
         <div class="col-sm-4">
-            <input type="password" name="password" class="form-control ${(passwordError??)?string('is-invalid', '')}" placeholder="Password"/>
+            <input type="password" name="password" class="form-control ${(passwordError??)?string('is-invalid', '')}" placeholder="Пароль"/>
             <#if passwordError??>
                 <div class="invalid-feedback">
                 ${passwordError}
@@ -64,8 +64,8 @@
     <input type="hidden" name="_csrf" value="${_csrf.token}">
     <#if !isRegisterForm>
 
-        <a href="/registration">Add new user</a></#if>
-    <button type="submit" class="btn btn-primary"><#if isRegisterForm>Create<#else>Sign In</#if></button>
+        <a href="/registration">Регистрация</a></#if>
+    <button type="submit" class="btn btn-primary"><#if isRegisterForm>Регистрация<#else>Войти</#if></button>
 </form>
 </#macro>
 
@@ -75,9 +75,9 @@
     <form action="/logout" method="post">
         <input type="hidden" name="_csrf" value="${_csrf.token}">
 
-        <button type="submit" class="btn btn-primary">Sign Out</button>
+        <button type="submit" class="btn btn-primary">Выйти</button>
     </form>
     <#else>
-    <a class="btn btn-primary" href="/login" role="button">Sign in</a>
+    <a class="btn btn-primary" href="/login" role="button">Войти</a>
     </#if>
 </#macro>

@@ -11,6 +11,9 @@
         </form>
     </div>
 </div>
+<#assign
+add=true
+>
 <#include "parts/messageEdit.ftl"/>
 <#include "parts/messageList.ftl"/>
 </@c.page>

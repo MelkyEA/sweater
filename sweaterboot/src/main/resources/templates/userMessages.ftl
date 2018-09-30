@@ -2,6 +2,9 @@
 
 <@c.page>
 <#if isCurrentUser>
+<#assign
+    add=false
+    >
 <#include "parts/messageEdit.ftl"/>
 </#if>
 <#include "parts/messageList.ftl"/>

@@ -1,6 +1,6 @@
-
-<a class="btn btn-primary" data-toggle="collapse" href="#AddMessage" role="button" aria-expanded="false" aria-controls="collapseExample">
-    Редактировать сообщение
+<#include "security.ftl">
+<a class="btn btn-primary" data-toggle="collapse" href="#AddMessage" role="button" aria-expanded="false"
+   aria-controls="collapseExample"><#if add> Добавить сообщение<#else> Редактировать сообщение</#if>
 </a>
 <div class="collapse <#if message??>show</#if>" id="AddMessage">
     <div class="form-group mt-3">
@@ -27,7 +27,7 @@
 </div>
 <div class="custom-file">
     <input type="file" class="custom-file-input" id="customFile" name="file">
-    <label class="custom-file-label" for="customFile">Choose file</label>
+    <label class="custom-file-label" for="customFile">Выбрать файл</label>
 </div>
 <input type="hidden" name="_csrf" value="${_csrf.token}">
 <input type="hidden" name="id" value="<#if message??>${message.id}</#if>">
@@ -37,25 +37,4 @@
 </form>
 </div>
 
-</div>
-<div class="card-columns">
-    <#list messages as message>
-    <div class="card my-3" style="width: 18rem;">
-
-        <#if message.filename??>
-        <img src="/img/${message.filename} " class="card-img-top">
-    </#if>
-    <div class="m-2"
-    <span>${message.text}</span>
-    <i>${message.tag}</i>
-</div>
-<div class="card-footer text-muted">
-    ${message.authorName}
-</div>
-
-</div>
-<#else>
-No messages
-
-</#list>
 </div>
